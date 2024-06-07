@@ -19,6 +19,7 @@ def hbnb():
     """Wolcome to hbnb"""
     return "HBNB"
 
+
 @app.route('/c/<text>')
 def c_then_params(text):
     """C is fun"""

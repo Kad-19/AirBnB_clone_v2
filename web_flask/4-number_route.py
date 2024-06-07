@@ -19,18 +19,21 @@ def hbnb():
     """Wolcome to hbnb"""
     return "HBNB"
 
+
 @app.route('/c/<text>')
 def c_then_params(text):
     """C is fun"""
     text_mod = text.replace('_', ' ')
     return "C {}".format(text_mod)
 
-@app.route('/python', defaults={'text':'is_cool'})
+
+@app.route('/python', defaults={'text': 'is_cool'})
 @app.route('/python/<text>')
 def python_then_params(text):
     """Python is cool"""
     text_mod = text.replace('_', ' ')
     return "Python {}".format(text_mod)
+
 
 @app.route('/number/<int:n>')
 def number(n):
