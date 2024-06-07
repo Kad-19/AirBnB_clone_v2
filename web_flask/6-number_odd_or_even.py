@@ -50,7 +50,7 @@ def number_template(n):
 @app.route('/number_odd_or_even/<int:n>')
 def number_odd_or_even(n):
     """Number is even or odd"""
-    even_or_odd = "even" if n%2 == 0 else "odd"
+    even_or_odd = "even" if n % 2 == 0 else "odd"
     values = {
         "number": n,
         "even_or_odd": even_or_odd
